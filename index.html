@@ -87,14 +87,39 @@
         #header {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
     
         #header img {
-            width: 60px;
+            width: 50px;
             height: auto;
+        }
+    
+        #header h1 {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin: 0;
+        }
+    
+        #donate-button button {
+            background-color: #813fdf;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        #donate-button button:hover {
+            background-color: #5c2ba3;
         }
     
         /* Блок настроек */
@@ -390,8 +415,11 @@
 <body>
     <div id="app">
         <div id="header">
-            <img src="https://raw.githubusercontent.com/KOSFin/2cwhat.syprod.-/refs/heads/main/2cwhat.webp" alt="lg" width="50">
+            <img src="https://raw.githubusercontent.com/KOSFin/2cwhat.syprod.-/refs/heads/main/2cwhat.webp" alt="Logo" width="50">
             <h1>2CwHAT</h1>
+            <a href="https://www.donationalerts.com/r/parapopovich" id="donate-button" target="_blank" rel="noopener noreferrer">
+                <button>💜 Donate</button>
+            </a>
         </div>
     
         <div id="no-token" style="display: none;">
