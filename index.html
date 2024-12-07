@@ -396,7 +396,10 @@
             </div>
             <button id="start">Start</button>
             <button id="stop" disabled>Stop</button>
-            <button id="exportData">Скачать данные JSON</button>
+            <div style="display: flex;">
+                <button id="exportData">Скачать данные JSON</button>
+                <button id="help">❓</button>
+            </div>
         </div>
 
         <div id="info">
@@ -449,6 +452,7 @@
         const noTokenDiv = document.getElementById('no-token');
         const integrateButton = document.getElementById('integrate-twitch');
         const logoutButton = document.getElementById('logout');
+        const helpButton = document.getElementById('help');
 
         let username = '';
         let timer = 0;
@@ -471,6 +475,8 @@
         logoutButton.addEventListener('click', () => {
             logout();
         });
+
+        
 
         function logout() {
             localStorage.removeItem('twitchToken');
@@ -509,6 +515,10 @@
         integrateButton.addEventListener('click', () => {
             window.location.href = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUri}&scope=chat:read`;
         });
+
+        helpButton.addEventListener('click', () => {
+            alert("Скачанный файл можно использовать для аукциона или колеса фортуны в сервисе pointauc.com или в других сервисах, которые принимают такой формат данных.");
+        }
 
         startButton.addEventListener('click', () => {
             if (!counting) {
