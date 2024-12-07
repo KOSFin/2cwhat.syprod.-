@@ -254,6 +254,12 @@
             background: #c9283e;
             transform: scale(0.9);
         }
+
+        #integrate-twitch {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
     
         /* Для мобильных устройств */
         @media (max-width: 768px) {
@@ -420,7 +426,7 @@
         let socket;
 
         const clientId = 'pxie3yypaf51ctb0gmvz7m76fq4z0c'; // Your Twitch client ID
-        const redirectUri = 'https://syprod.ru/ConnectorTwich.html';
+        const redirectUri = 'https://2cwhat.syprod.ru';
 
         // Проверяем токен в localStorage
         let accessToken = localStorage.getItem('twitchToken');
