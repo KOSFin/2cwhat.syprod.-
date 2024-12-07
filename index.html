@@ -259,6 +259,11 @@
             margin-left: auto;
             margin-right: auto;
             display: block;
+            background-color: #9246ff;
+        }
+
+        #integrate-twitch:hover {
+            background-color: #833ee5;
         }
     
         /* Для мобильных устройств */
@@ -452,7 +457,6 @@
                 if (accessToken) {
                     localStorage.setItem('twitchToken', accessToken);
                     window.history.replaceState({}, document.title, window.location.pathname);
-                    initializeUser(accessToken);
                 } else {
                     alert('Ошибка авторизации. Попробуйте снова.');
                     showNoTokenScreen();
