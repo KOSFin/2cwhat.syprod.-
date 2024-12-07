@@ -347,6 +347,35 @@
         th:nth-child(2) {
             max-width: 300px; /* Задаём максимальную ширину */
         }
+
+        .welcome-text {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #333; /* Основной цвет текста */
+        }
+        
+        .welcome-text ul {
+            text-align: left;
+            display: inline-block;
+            margin: 10px auto;
+            padding: 0 20px;
+            list-style-type: disc;
+        }
+        
+        .welcome-text ul li {
+            margin-bottom: 5px;
+        }
+        
+        .welcome-text strong {
+            color: #ff6200; /* Выделение ключевых слов */
+        }
+        
+        .welcome-text p {
+            margin-bottom: 15px;
+        }
+
     </style>
 </head>
 <body>
@@ -357,7 +386,41 @@
         </div>
     
         <div id="no-token" style="display: none;">
-            <p>Welcome to 2CwHAT. Connect your Twitch account to start counting messages!</p>
+            <div class="welcome-text">
+                <!-- Russian Description -->
+                <p>
+                    Добро пожаловать в <strong>2cWhat</strong> — уникальный инструмент для стримеров Twitch!<br>
+                    Подключите свой Twitch аккаунт в один клик и начните мониторить сообщения на вашем стриме.<br>
+                    Вы можете:
+                </p>
+                <ul>
+                    <li>Следить за всеми сообщениями или только по ключевым словам.</li>
+                    <li>Отслеживать сообщения от подписчиков (сабов).</li>
+                    <li>Объединять сообщения по никам.</li>
+                    <li>Сохранять данные и скачивать их в удобном формате.</li>
+                    <li>Использовать экспортированные данные в сервисе Pointauc для проведения аукционов и конкурсов.</li>
+                </ul>
+                <p>
+                    Упростите управление чатом и сделайте взаимодействие с аудиторией еще удобнее!
+                </p>
+            
+                <!-- English Description -->
+                <p>
+                    Welcome to <strong>2cWhat</strong> — a unique tool for Twitch streamers!<br>
+                    Connect your Twitch account in one click and start monitoring messages on your stream.<br>
+                    With 2cWhat, you can:
+                </p>
+                <ul>
+                    <li>Track all messages or filter by keywords.</li>
+                    <li>Monitor messages from subscribers (subs).</li>
+                    <li>Group messages by username.</li>
+                    <li>Save data and download it in a convenient format.</li>
+                    <li>Use the exported data in Pointauc for auctions and giveaways.</li>
+                </ul>
+                <p>
+                    Simplify chat management and enhance your audience engagement!
+                </p>
+            </div>
             <button id="integrate-twitch">
                 <img src="https://m.media-amazon.com/images/I/21kRx-CJsUL._AC_UL800_QL65_.png" alt="Twitch Logo" width="30" style="vertical-align: middle;"> Integrate with Twitch
             </button>
