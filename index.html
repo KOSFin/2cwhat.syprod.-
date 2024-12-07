@@ -76,6 +76,7 @@
             padding: 12px 24px;
             border-radius: 8px;
             transition: background-color 0.3s ease;
+            margin: 2px;
         }
     
         button:hover {
@@ -396,7 +397,7 @@
             </div>
             <button id="start">Start</button>
             <button id="stop" disabled>Stop</button>
-            <div style="display: flex;">
+            <div>
                 <button id="exportData">Скачать данные JSON</button>
                 <button id="help">❓</button>
             </div>
@@ -518,7 +519,7 @@
 
         helpButton.addEventListener('click', () => {
             alert("Скачанный файл можно использовать для аукциона или колеса фортуны в сервисе pointauc.com или в других сервисах, которые принимают такой формат данных.");
-        }
+        });
 
         startButton.addEventListener('click', () => {
             if (!counting) {
