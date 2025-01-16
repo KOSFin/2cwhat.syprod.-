@@ -541,7 +541,7 @@
         let chatData = [];
         let socket;
 
-        const clientId = secret.twich_client_id; // Your Twitch client ID
+        const clientId = process.env.TWITCH_CLIENT_ID;
         const redirectUri = 'https://2cwhat.syprod.ru';
 
         // Проверяем токен в localStorage
